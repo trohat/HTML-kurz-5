@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+ol {
+    background-color: rgb(237, 105, 224);
+    padding: 15px;
+    max-width: 200px;
+}
+
+li {
+    background-color: blueviolet;
+    margin: 5px;
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+span {
+    background-color: brown;
+    padding-left: 5px;
+    padding-right: 5px;
+}

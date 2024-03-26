@@ -1,0 +1,27 @@
+h1 {
+    /* border: 3px solid orange; */
+    /* border: 10px dotted orange; */
+    /* border: 5px dashed orange; */
+    border: 5px double orange;
+    border: 10px ridge orange;
+    /* height: 40px; */
+    width: fit-content;
+    /* padding: 40px; */
+    
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 40px; */
+    padding: 20px 30px 10px 40px;
+    padding: 20px 30px 10px;
+    padding: 20px 30px;
+}
+
+.prvni {
+    padding-bottom: 50px;
+    margin: 50px 30px;
+}
+
+.druhy {
+    padding-top: 70px;
+}
