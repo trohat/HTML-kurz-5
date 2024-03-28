@@ -1,0 +1,21 @@
+h1 {
+    background-color: red;
+    width: 500px;
+    height: 70px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 40px;
+}
+
+span {
+    background-color: orange;
+    /* display: block; */
+    width: 500px;
+    height: 200px;
+    margin: 30px;
+    padding: 40px;
+}
+
+ol {
+    margin-bottom: 100px;
+}
