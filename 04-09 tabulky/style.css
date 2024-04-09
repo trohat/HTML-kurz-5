@@ -1,0 +1,63 @@
+
+
+table {
+    border-collapse: collapse;
+    /* border-spacing: 10px; */
+}
+
+td {
+    /* border: 1px solid black; */
+    width: 80px;
+    height: 20px;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: center;
+} 
+/*
+tr:first-child {
+    background-color: aqua;
+}
+
+tr:last-child {
+    background-color: red;
+}
+
+td:first-child {
+    background-color: chartreuse;
+}
+
+tr:nth-child(3) {
+    background-color: brown;
+}
+
+tr:nth-child(3n+1) {
+    background-color: darkcyan;
+}
+
+tr:nth-child(3n+2) {
+    background-color: green;
+}
+*/
+
+th {
+    background-color: aqua;
+}
+
+tr:nth-child(odd) {
+    background-color: darkslategrey;
+}
+
+
+tr:nth-child(2) td:first-of-type {
+    background-color: black;
+}
+
+
+
+/*
+body > td:first-child {
+    color: red;
+}
+*/
+
+/* table > tr */
