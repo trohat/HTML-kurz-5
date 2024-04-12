@@ -1,0 +1,68 @@
+.obdelnik {
+    width: 100px;
+    /* height: 50px; */
+    border: 1px solid black;
+    margin: 2px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.obdelnik:nth-child(4n) {
+    background-color: chartreuse;
+}
+
+.obdelnik:nth-child(4n+1) {
+    background-color: aqua;
+}
+
+.obdelnik:nth-child(4n+2) {
+    background-color: chocolate;
+}
+
+.obdelnik:nth-child(4n+3) {
+    background-color: rgb(220, 78, 78);
+}
+
+.kontejner {
+    border: 2px solid orange;
+    background-color: darkseagreen;
+    height: 50vh;
+}
+
+
+.kontejner {
+    display: flex;
+    flex-direction: row; /* není nutné psát, je to výchozí nastavení*/
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+}
+
+.obdelnik {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.prvni {
+}
+
+.druhy {
+    flex-grow: 10;
+    flex-shrink: 10;
+    order: 10;
+}
+
+.treti {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+@media (max-width: 800px) {
+    .treti {
+        order: -2;
+    }
+}
+
