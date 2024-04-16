@@ -2,7 +2,7 @@
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 10px;
+    
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    margin: 10px;
     background-color: #923158;
     height: 10vh;
     line-height: 10vh;
@@ -22,6 +23,7 @@ header {
 }
 
 nav {
+    margin: 10px;
     background-color: #6e1237;
     height: 8vh;
     line-height: 8vh;
@@ -30,6 +32,7 @@ nav {
 }
 
 footer {
+    margin: 10px;
     background-color: #58254b;
     height: 8vh;
     padding: 5px;
@@ -37,24 +40,51 @@ footer {
     line-height: 8vh;
 }
 
-.inner-aside {
-    background-color: #b65b80;
+.main-section {
+    display: flex;
+    gap: 10px;
 }
 
+.main-section > * {
+    margin: 0;   
+}
+
+.inner-aside {
+    background-color: #b65b80;
+    margin: 0;
+    padding: 15px;
+}
+
+.inner-aside:first-child {
+    margin-bottom: 10px;
+}
+
+.inner-aside:last-child {
+   padding-bottom: 60px;
+}
 
 main {
     background-color: #b65b80;
-    
+    flex-grow: 3;
 }
 
 .right {
     background-color: #b65b80;
     text-orientation: upright;
     writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
-section {
+.inner-section {
     background-color: #db92af;
     margin-left: 0;
 }
+
+.left, .right {
+    flex-grow: 1;
+}
+
 
