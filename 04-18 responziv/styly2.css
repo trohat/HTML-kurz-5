@@ -1,0 +1,64 @@
+.obdelnik {
+    width: 400px;
+    height: 150px;
+    border: 3px solid black;
+    line-height: 150px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.cerveny {
+    background-color: rgb(228, 49, 49);
+}
+
+.zeleny {
+    background-color: rgb(20, 239, 20);
+}
+
+@media (max-width: 500px) {
+    .reklama {
+        display: none;
+    }
+}
+
+
+@media (min-width: 700px)  {
+    .modry {
+        background-color: orange;
+    }
+}
+
+
+.modry {
+    background-color: rgb(35, 35, 210);
+}
+
+
+@media (min-width: 1000px)  {
+    .modry {
+        background-color: rgb(20, 239, 20);
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .cerveny {
+        font-weight: bold;
+        background-color: red;
+    }
+
+    .modry {
+        background-color: violet;
+    }
+
+    body {
+        display: block;
+    }
+}
+

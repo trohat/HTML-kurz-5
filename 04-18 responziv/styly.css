@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.obdelnik {
+    /* max-width: 700px; */
+    width: 80vw; /* viewport width */
+    height: 50%;
+    border: 30px dashed red;
+    padding: 3%;
+    background-color: orange;
+}
+
+.maly {
+    width: 70vw;
+    height: 20vw;
+    border: 10px dashed blue;
+    background-color: darkblue;
+}
+
+body {
+    height: 100vh; /* viewport height */
+}
+
