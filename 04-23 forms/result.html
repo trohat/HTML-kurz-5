@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář odeslán</title>
+    <style>
+        #results {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Formulář byl odeslán metodou <span id="method"></span></h3>
+    <p>Data odeslaná formulářem jsou zde:</p>
+    <div id="results"></div>
+    <a href="index.html">Zpět na formulář</a>
+
+    <script>
+        const vysledky = document.getElementById("results");
+        new URLSearchParams(window.location.search).forEach((val, name) => {
+            vysledky.append(`${name}: ${val}`);
+            vysledky.append(document.createElement('br'));
+        });
+        const metoda = document.getElementById("method");
+        if (window.location.search === "") {
+            metoda.innerHTML = "POST";
+        } else {
+            metoda.innerHTML = "GET";
+        }
+        
+
+    </script>
+
+</body>
+</html>
