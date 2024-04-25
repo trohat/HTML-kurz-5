@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.obdelnik {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(220, 100, 20);
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    margin: 5px;
+}
+
+.kontejner {
+    margin: 10px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 3fr);
+    /* grid-template-rows: 200px 150px 100px; */
+    grid-template-rows: repeat(4, 150px);
+    /* grid-auto-rows: 150px; */
+    grid-template-areas: "header header header header"
+                         "aside1 main main aside2"
+                         "aside1 main main ."
+                         "aside1 footer footer footer";
+}
+/* fr = fraction, ale klidně taky free space */
+/*
+.obdelnik:nth-child(3) {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 3;
+}*/
+
+.obdelnik:first-child {
+    grid-area: header;
+}
+
+.obdelnik:nth-child(2) {
+    grid-area: aside1;
+}
+
+.obdelnik:nth-child(3) {
+    grid-area: main;
+}
+
+.obdelnik:nth-child(4) {
+    grid-area: aside2;
+}
+
+.obdelnik:last-child {
+    grid-area: footer;
+}
