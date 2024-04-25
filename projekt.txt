@@ -1,0 +1,9 @@
+Požadavky na HTML/CSS projekt:
+
+Vytvořte pěknou HTML/CSS stránku, s obsahem dle vaší volby. Stránka bude responzivní a bude vypadat hezky na všech šířkách viewportu. Může jít i o stránku s vícepodstránkami, s pěknou navigací na přepínání. 
+
+Další požadavky:
+HTML je validní a používá sémantické značky. CSS ani HTML nepoužívají zastaralé postupy a splňují základní nároky na SEO (např. alt atributy u obrázků, floaty ani tabulky nejsou určené na komplexní design). Barvy k sobě ladí a jsou pěkně kontrastní. Stránky používají aspoň jeden moderní layout (flexbox, grid) a obsahují aspoň jeden formulář. Můžete přidat animace, transformace, přechody. Můžete používat knihovny. 
+
+Verzování:
+Projekt je verzován gitem, vystaven na githubu a má dostatečné množství commitů (každá výrazná změna kódu = jeden commit).

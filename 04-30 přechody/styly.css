@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 200px;
+}
+
+.tvar {
+    width: var(--width);
+    margin: 70px;
+}
+
+.obdelnik {
+    width: calc(var(--width) * 1.2);
+    height: calc(var(--width) * .6);
+}
+
+.ctverec, .kolecko {
+    height: var(--width);;
+}
+
+.kolecko {
+    border-radius: 50%;
+}
+
+.cerveny {
+    background-color: #be4d25;
+}
+
+.zeleny {
+    background-color: #49be25;
+}
+
+.modry {
+    background-color: #2596be;
+}
