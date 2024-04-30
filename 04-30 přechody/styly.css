@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* používám CSS proměnné, neděste se toho, brát je nebudeme */
 :root {
     --width: 200px;
 }
@@ -12,12 +12,12 @@
 }
 
 .obdelnik {
-    width: calc(var(--width) * 1.2);
+    width: calc(var(--width) * 2);
     height: calc(var(--width) * .6);
 }
 
 .ctverec, .kolecko {
-    height: var(--width);;
+    height: var(--width);
 }
 
 .kolecko {
@@ -34,4 +34,57 @@
 
 .modry {
     background-color: #2596be;
+}
+
+/*************************************************************/
+
+.ctverec {
+    /* transform: translateX(100px); */
+    /* transform: translate(100px, 200px); */
+    /* translate: 100px 200px; */
+    transition: all 3s;
+}
+
+.ctverec:hover {
+    height: 400px;
+}
+
+.obdelnik {
+    transition: transform 2s;
+    transition-timing-function: cubic-bezier(.56,90,.66,2.11);
+}
+
+.obdelnik:hover {
+    /* transform: translateX(200px) rotate(60deg) scale(2, 1); */
+    /* rotate: 90deg; */
+    /* transform: skew(40deg, 20deg); */
+    transform: rotate(90deg);
+    background-color: #1f6709;
+    /* transition-property: all; */
+    /* transition-duration: 3s; */
+} 
+
+.kolecko {
+    transition: transform .3s 0s, background-color .5s .3s;
+}
+
+.kolecko:hover {
+    transform: scale(2);
+    background-color: #be4d25;
+}
+
+.button {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 50px;
+    box-shadow: 15px 15px 15px 0px #544747;
+    transition: all .15s;
+}
+
+.button:active {
+    transform: translate(15px, 15px);
+    box-shadow: 0px 0px 5px 0px #544747;
 }

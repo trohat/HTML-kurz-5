@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+/* používám CSS proměnné, neděste se toho, brát je nebudeme */
+:root {
+    --width: 200px;
+}
+
+.tvar {
+    width: var(--width);
+    margin: 70px;
+}
+
+.kolecko {
+    height: var(--width);
+    border-radius: 50%;
+    background-color: #ff6500;
+}
+
+/*
+barvy:
+#C40C0C
+#FF6500
+#FF8A08
+#FFC100
+
+#640D6B
+#B51B75
+*/
