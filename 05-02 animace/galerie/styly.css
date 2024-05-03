@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    width: 100%; /* 400px pro flex */
+    height: 100%; /* 300px pro flex */
+}
+
+.galerie {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    /* následující 4 řádky představují nastavení gridu, lze zaměnit za předcházející řádky, kde se používá flex box */
+    /* ale pozor, v gridu můžu dovolit nastavit šířku a výšku obrázků na 100% (viz výše), protože mi rozměry nastavuje grid, ve flexu jsem tam musel mít 400px a 300px */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-rows: 300px;
+    justify-content: center;
+    /* konec gridu */
+
+    margin-bottom: 30px;
+}
+
+.obrazek {
+    position: relative;
+    overflow: hidden;
+}
+
+.obrazek img {
+    display: block;
+    transition: transform .3s;
+}
+
+.obrazek:hover img {
+    transform: scale(1.25);
+}
+
+img[src="images/cat.jpg"] {
+    transform-origin: right bottom;
+}
+
+img[src="images/flamingo.jpg"] {
+    transform-origin: 100% 50%;
+}
+
+.popisek {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 12px;
+    transform: translateY(100%);
+    transition: transform 1s;
+    /* transition-timing-function: ease-in; */
+}
+
+.hlavni {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.obrazek:hover .popisek {
+    transform: translateY(0);
+    /* transition-timing-function: ease-out; */
+}
+

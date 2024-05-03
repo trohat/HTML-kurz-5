@@ -3,7 +3,7 @@
 }
 /* používám CSS proměnné, neděste se toho, brát je nebudeme */
 :root {
-    --width: 200px;
+    --width: 400px;
 }
 
 .tvar {
@@ -27,3 +27,60 @@ barvy:
 #640D6B
 #B51B75
 */
+
+/***************************************************/
+
+.kolecko {
+   
+    animation-name: diskokoule;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-delay: 1.5s; */
+    animation-fill-mode: backwards;
+    /* animation-timing-function: ease; */
+}
+
+
+@keyframes diskokoule {
+    0% {
+        transform: translate(0, 0);
+        background-color: #640D6B;
+    }
+
+    15% {
+        background-color: #B51B75;
+    }
+
+    20% {
+        transform: translate(0, 400px);
+    }
+
+    35% {
+        transform: translate(300px, 0);
+        background-color: #C40C0C;
+    }
+
+    50% {
+        transform: translate(400px, 400px);
+        background-color: #FF6500;
+    }
+
+    70% {
+        transform: translate(600px, 0);
+    }
+
+    75% {
+        background-color: #FF8A08;
+    }
+
+    85% {
+        transform: translate(800px, 0);
+    }
+
+    100% {
+        transform: translate(800px, 400px);
+        background-color: #FFC100;
+    }
+}
+
