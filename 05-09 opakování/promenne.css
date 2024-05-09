@@ -1,0 +1,52 @@
+
+* {
+
+}
+
+body {
+    background-color: #b5b5b5;
+}
+
+
+
+:root {
+    --barva-linku: blue;
+    --barva-textu: black;
+}
+
+.inverze {
+    --barva-linku: yellow;
+    --barva-textu: white;
+    --barva-pozadi: black;
+}
+
+section {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: justify;
+    width: 400px;
+    height: 350px;
+    border: 2px solid var(--barva-textu);
+    background-color: var(--barva-pozadi, #b5b5b5);
+    color: var(--barva-textu);
+}
+
+a {
+    color: var(--barva-linku);
+}
+
+button {
+    display: block;
+    margin: 38px auto;
+    width: 200px;
+    height: 40px;
+    border: 3px solid var(--barva-linku);
+    color: var(--barva-linku);
+    background-color: var(--barva-pozadi, white);
+}
+
+.grid {
+    display: grid;
+    
+    grid-template-columns: repeat(var(--cols, 6), 1fr);
+}

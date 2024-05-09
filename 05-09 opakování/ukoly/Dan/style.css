@@ -1,0 +1,48 @@
+* {
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+header, nav, aside, main, footer {
+    background-color: rgb(73, 140, 77);
+    padding: 20px;
+    place-content: center;
+    text-align: center;
+    min-height: 100px;
+    margin: 10px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr 400px 1fr;
+    grid-template-areas:    
+     "header header" 
+     "nav nav"
+     "sidebar body" 
+     "footer footer";
+}
+
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: body;
+}
+
+footer {
+    grid-area: footer;
+}
